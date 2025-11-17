@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Animal Hospital - Premier Veterinary Care in Santa Monica, CA</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic service icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Configure Tailwind and Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-heading {
+            border-left: 5px solid #10B981; /* Tailwind green-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-teal-600 hover:text-teal-700 transition duration-300">
+                <i data-lucide="paw-print" class="inline-block w-6 h-6 mr-1 align-text-bottom text-indigo-600"></i>
+                Paris Animal Hospital
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#about" class="text-gray-600 hover:text-teal-600 transition duration-150">About</a>
+                <a href="#services" class="text-gray-600 hover:text-teal-600 transition duration-150">Services</a>
+                <a href="#new-patients" class="text-gray-600 hover:text-teal-600 transition duration-150">New Patients</a>
+                <a href="#reviews" class="text-gray-600 hover:text-teal-600 transition duration-150">Reviews</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute w-full z-10 transition-all duration-300">
+        <nav class="flex flex-col space-y-2 p-4">
+            <a href="#about" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">About</a>
+            <a href="#services" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">Services</a>
+            <a href="#new-patients" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">New Patients</a>
+            <a href="#reviews" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">Reviews</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-indigo-600 text-white py-20 sm:py-32 relative overflow-hidden">
+            <!-- Background Blob/Shape -->
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 100% 0%, #4F46E5 0%, transparent 70%);"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Compassionate Care for Your Furry Family
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                    **Paris Animal Hospital** provides premium, modern veterinary services in **Santa Monica, CA**.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="tel:3105550199" class="inline-flex items-center justify-center bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-xl transition duration-300 transform hover:scale-105">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                        Call Today: (310) 555-0199
+                    </a>
+                    <a href="#contact-footer" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-xl shadow-xl transition duration-300 transform hover:scale-105">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-4xl font-extrabold text-gray-900 mb-6 section-heading pl-4">
+                            Your Local <span class="text-teal-600">Santa Monica</span> Vet
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Established in 2010, **Paris Animal Hospital** is dedicated to providing the highest quality medical, surgical, and dental care for your pets. We treat every patient as if they were our own, offering a welcoming, low-stress environment for both you and your companion.
+                        </p>
+                        <ul class="space-y-2 text-gray-700 text-base">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                State-of-the-art diagnostic and surgical tools.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                Experienced and compassionate veterinary team.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                Focus on preventive medicine and wellness.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- Placeholder image for the clinic -->
+                        <img src="https://placehold.co/800x600/60A5FA/FFFFFF?text=Modern+Clinic+Interior" 
+                             alt="Interior of Paris Animal Hospital" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 sm:py-24 bg-indigo-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-center text-gray-600 mb-12">
+                    Comprehensive care tailored to every stage of your pet's life.
+                </p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="stethoscope" class="w-10 h-10 text-teal-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Preventive Wellness</h3>
+                        <p class="text-gray-600 text-sm">Routine exams, vaccinations, parasite control, and nutritional counseling for optimal health.</p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="bone" class="w-10 h-10 text-indigo-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Surgery & Anesthesia</h3>
+                        <p class="text-gray-600 text-sm">Routine spay/neuter, soft tissue surgery, and advanced orthopedic procedures with meticulous monitoring.</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="tooth" class="w-10 h-10 text-orange-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Dental Care</h3>
+                        <p class="text-gray-600 text-sm">Professional cleaning, digital dental X-rays, and extractions to ensure a healthy mouth.</p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="microscope" class="w-10 h-10 text-yellow-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Diagnostics & Labs</h3>
+                        <p class="text-gray-600 text-sm">In-house laboratory, digital radiology, and ultrasound for fast, accurate results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Patients & Forms Section -->
+        <section id="new-patients" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- New Patients Content -->
+                    <div class="p-6 bg-gray-50 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 section-heading pl-4">
+                            Becoming a New Patient
+                        </h3>
+                        <p class="text-lg text-gray-700 mb-6">
+                            We are delighted to welcome you and your pet to the Paris Animal Hospital family! We strive to make your first visit easy and stress-free.
+                        </p>
+                        <p class="text-base text-gray-600 mb-4 italic">
+                            **Tip:** Please arrive 15 minutes before your scheduled appointment time.
+                        </p>
+                        <a href="#contact-footer" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded-xl shadow-lg transition duration-300">
+                            Schedule Your First Visit
+                        </a>
+                    </div>
+                    
+                    <!-- Forms Box -->
+                    <div class="p-6 bg-teal-50 rounded-xl border-2 border-teal-300 shadow-xl">
+                        <h3 class="text-3xl font-bold text-teal-800 mb-4 flex items-center">
+                            <i data-lucide="file-text" class="w-7 h-7 mr-2"></i>
+                            Patient Forms
+                        </h3>
+                        <p class="text-lg text-teal-800 mb-6">
+                            To save time during your first appointment, please download and complete our New Patient Intake Forms in advance.
+                        </p>
+                        <a href="#" class="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition duration-300">
+                            <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                            Download Forms (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-16 sm:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">What Pet Owners Say</h2>
+                <p class="text-lg text-center text-gray-600 mb-12">
+                    Hearing from our community is the best part of our day!
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Review Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "The entire team at Paris Animal Hospital is wonderful. They took incredible care of my elderly dog, Max, explaining all the options with patience and kindness. I wouldn't go anywhere else in Santa Monica!"
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/22C55E/FFFFFF?text=J.S." 
+                                 alt="Jane S. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/22C55E/FFFFFF?text=J.S.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-teal-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Jane S.</p>
+                                <p class="text-sm text-gray-500">Local Pet Parent (Golden Retriever)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "Dr. Emily is incredibly knowledgeable. She helped us manage our cat Luna's chronic allergies successfully. The facilities are always clean, and the booking process is very simple online."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/3B82F6/FFFFFF?text=M.C." 
+                                 alt="Mark C. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/3B82F6/FFFFFF?text=M.C.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-indigo-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Mark C.</p>
+                                <p class="text-sm text-gray-500">First-Time Patient (Siamese Cat)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "My puppy, Cooper, needed emergency care, and the Paris team was fast, professional, and comforting. They followed up twice to check on him. Truly exceptional veterinary medicine."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/F97316/FFFFFF?text=K.T." 
+                                 alt="Karen T. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/F97316/FFFFFF?text=K.T.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-orange-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Karen T.</p>
+                                <p class="text-sm text-gray-500">Long-Term Client (Beagle Puppy)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Footer Bar -->
+        <section id="contact-footer" class="bg-indigo-700 text-white py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-4">Ready to Schedule an Appointment?</h3>
+                <a href="tel:3105550199" class="inline-flex items-center bg-teal-400 hover:bg-teal-500 text-gray-900 font-extrabold py-3 px-10 rounded-xl shadow-2xl transition duration-300 transform hover:scale-105">
+                    <i data-lucide="calendar-check" class="w-6 h-6 mr-2"></i>
+                    Book Now
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+            
+            <!-- Logo & About Snippet -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">
+                    <i data-lucide="paw-print" class="inline-block w-5 h-5 mr-1 align-text-bottom text-teal-400"></i>
+                    Paris Animal Hospital
+                </h4>
+                <p class="text-sm">Providing exceptional and personalized care to pets in the Santa Monica community since 2010.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Contact Us</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <i data-lucide="map-pin" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        1234 Ocean Ave, Santa Monica, CA 90401
+                    </li>
+                    <li>
+                        <i data-lucide="phone" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        Call: <a href="tel:3105550199" class="hover:text-white transition">(310) 555-0199</a>
+                    </li>
+                    <li>
+                        <i data-lucide="mail" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        Email: <a href="mailto:Parisanimalhospital@gmail.com" class="hover:text-white transition">Parisanimalhospital@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#services" class="hover:text-white transition">Full Service List</a></li>
+                    <li><a href="#new-patients" class="hover:text-white transition">New Patient Info</a></li>
+                    <li><a href="#" class="hover:text-white transition">Pet Health Library</a></li>
+                    <li><a href="#" class="hover:text-white transition">Client Portal Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Operating Hours (Mock) -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Hours</h4>
+                <ul class="space-y-1 text-sm">
+                    <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                    <li>Saturday: 9:00 AM - 1:00 PM</li>
+                    <li>Sunday: Closed</li>
+                    <li class="pt-2 text-teal-400">Emergency Services Available</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center border-t border-gray-700 mt-8 pt-6">
+            <p class="text-xs">&copy; 2025 Paris Animal Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            // Toggle visibility
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple scroll initialization for smooth transitions
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Animal Hospital - Premier Veterinary Care in Santa Monica, CA</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic service icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Configure Tailwind and Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-heading {
+            border-left: 5px solid #10B981; /* Tailwind green-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-teal-600 hover:text-teal-700 transition duration-300">
+                <i data-lucide="paw-print" class="inline-block w-6 h-6 mr-1 align-text-bottom text-indigo-600"></i>
+                Paris Animal Hospital
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#about" class="text-gray-600 hover:text-teal-600 transition duration-150">About</a>
+                <a href="#services" class="text-gray-600 hover:text-teal-600 transition duration-150">Services</a>
+                <a href="#new-patients" class="text-gray-600 hover:text-teal-600 transition duration-150">New Patients</a>
+                <a href="#reviews" class="text-gray-600 hover:text-teal-600 transition duration-150">Reviews</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute w-full z-10 transition-all duration-300">
+        <nav class="flex flex-col space-y-2 p-4">
+            <a href="#about" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">About</a>
+            <a href="#services" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">Services</a>
+            <a href="#new-patients" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">New Patients</a>
+            <a href="#reviews" class="block py-2 px-3 text-gray-700 hover:bg-gray-100 rounded-lg transition duration-150">Reviews</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-indigo-600 text-white py-20 sm:py-32 relative overflow-hidden">
+            <!-- Background Blob/Shape -->
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 100% 0%, #4F46E5 0%, transparent 70%);"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Compassionate Care for Your Furry Family
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                    **Paris Animal Hospital** provides premium, modern veterinary services in **Santa Monica, CA**.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="tel:3105550199" class="inline-flex items-center justify-center bg-teal-400 hover:bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-xl transition duration-300 transform hover:scale-105">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                        Call Today: (310) 555-0199
+                    </a>
+                    <a href="#contact-footer" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-8 rounded-xl shadow-xl transition duration-300 transform hover:scale-105">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-4xl font-extrabold text-gray-900 mb-6 section-heading pl-4">
+                            Your Local <span class="text-teal-600">Santa Monica</span> Vet
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Established in 2010, **Paris Animal Hospital** is dedicated to providing the highest quality medical, surgical, and dental care for your pets. We treat every patient as if they were our own, offering a welcoming, low-stress environment for both you and your companion.
+                        </p>
+                        <ul class="space-y-2 text-gray-700 text-base">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                State-of-the-art diagnostic and surgical tools.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                Experienced and compassionate veterinary team.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-teal-600 mt-1 flex-shrink-0"></i>
+                                Focus on preventive medicine and wellness.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2 rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- Placeholder image for the clinic -->
+                        <img src="https://placehold.co/800x600/60A5FA/FFFFFF?text=Modern+Clinic+Interior" 
+                             alt="Interior of Paris Animal Hospital" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 sm:py-24 bg-indigo-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-center text-gray-600 mb-12">
+                    Comprehensive care tailored to every stage of your pet's life.
+                </p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="stethoscope" class="w-10 h-10 text-teal-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Preventive Wellness</h3>
+                        <p class="text-gray-600 text-sm">Routine exams, vaccinations, parasite control, and nutritional counseling for optimal health.</p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="bone" class="w-10 h-10 text-indigo-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Surgery & Anesthesia</h3>
+                        <p class="text-gray-600 text-sm">Routine spay/neuter, soft tissue surgery, and advanced orthopedic procedures with meticulous monitoring.</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="tooth" class="w-10 h-10 text-orange-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Dental Care</h3>
+                        <p class="text-gray-600 text-sm">Professional cleaning, digital dental X-rays, and extractions to ensure a healthy mouth.</p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500 transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <i data-lucide="microscope" class="w-10 h-10 text-yellow-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Diagnostics & Labs</h3>
+                        <p class="text-gray-600 text-sm">In-house laboratory, digital radiology, and ultrasound for fast, accurate results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Patients & Forms Section -->
+        <section id="new-patients" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- New Patients Content -->
+                    <div class="p-6 bg-gray-50 rounded-xl border border-gray-200 shadow-md">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4 section-heading pl-4">
+                            Becoming a New Patient
+                        </h3>
+                        <p class="text-lg text-gray-700 mb-6">
+                            We are delighted to welcome you and your pet to the Paris Animal Hospital family! We strive to make your first visit easy and stress-free.
+                        </p>
+                        <p class="text-base text-gray-600 mb-4 italic">
+                            **Tip:** Please arrive 15 minutes before your scheduled appointment time.
+                        </p>
+                        <a href="#contact-footer" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded-xl shadow-lg transition duration-300">
+                            Schedule Your First Visit
+                        </a>
+                    </div>
+                    
+                    <!-- Forms Box -->
+                    <div class="p-6 bg-teal-50 rounded-xl border-2 border-teal-300 shadow-xl">
+                        <h3 class="text-3xl font-bold text-teal-800 mb-4 flex items-center">
+                            <i data-lucide="file-text" class="w-7 h-7 mr-2"></i>
+                            Patient Forms
+                        </h3>
+                        <p class="text-lg text-teal-800 mb-6">
+                            To save time during your first appointment, please download and complete our New Patient Intake Forms in advance.
+                        </p>
+                        <a href="#" class="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition duration-300">
+                            <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                            Download Forms (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-16 sm:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">What Pet Owners Say</h2>
+                <p class="text-lg text-center text-gray-600 mb-12">
+                    Hearing from our community is the best part of our day!
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Review Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "The entire team at Paris Animal Hospital is wonderful. They took incredible care of my elderly dog, Max, explaining all the options with patience and kindness. I wouldn't go anywhere else in Santa Monica!"
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/22C55E/FFFFFF?text=J.S." 
+                                 alt="Jane S. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/22C55E/FFFFFF?text=J.S.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-teal-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Jane S.</p>
+                                <p class="text-sm text-gray-500">Local Pet Parent (Golden Retriever)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "Dr. Emily is incredibly knowledgeable. She helped us manage our cat Luna's chronic allergies successfully. The facilities are always clean, and the booking process is very simple online."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/3B82F6/FFFFFF?text=M.C." 
+                                 alt="Mark C. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/3B82F6/FFFFFF?text=M.C.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-indigo-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Mark C.</p>
+                                <p class="text-sm text-gray-500">First-Time Patient (Siamese Cat)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-gray-700 italic mb-4">
+                            "My puppy, Cooper, needed emergency care, and the Paris team was fast, professional, and comforting. They followed up twice to check on him. Truly exceptional veterinary medicine."
+                        </p>
+                        <div class="flex items-center pt-4 border-t border-gray-100">
+                            <img src="https://placehold.co/80x80/F97316/FFFFFF?text=K.T." 
+                                 alt="Karen T. Profile" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/80x80/F97316/FFFFFF?text=K.T.'"
+                                 class="w-12 h-12 rounded-full mr-3 border-2 border-orange-400">
+                            <div>
+                                <p class="font-semibold text-gray-900">Karen T.</p>
+                                <p class="text-sm text-gray-500">Long-Term Client (Beagle Puppy)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Footer Bar -->
+        <section id="contact-footer" class="bg-indigo-700 text-white py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl font-bold mb-4">Ready to Schedule an Appointment?</h3>
+                <a href="tel:3105550199" class="inline-flex items-center bg-teal-400 hover:bg-teal-500 text-gray-900 font-extrabold py-3 px-10 rounded-xl shadow-2xl transition duration-300 transform hover:scale-105">
+                    <i data-lucide="calendar-check" class="w-6 h-6 mr-2"></i>
+                    Book Now
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+            
+            <!-- Logo & About Snippet -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">
+                    <i data-lucide="paw-print" class="inline-block w-5 h-5 mr-1 align-text-bottom text-teal-400"></i>
+                    Paris Animal Hospital
+                </h4>
+                <p class="text-sm">Providing exceptional and personalized care to pets in the Santa Monica community since 2010.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Contact Us</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <i data-lucide="map-pin" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        1234 Ocean Ave, Santa Monica, CA 90401
+                    </li>
+                    <li>
+                        <i data-lucide="phone" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        Call: <a href="tel:3105550199" class="hover:text-white transition">(310) 555-0199</a>
+                    </li>
+                    <li>
+                        <i data-lucide="mail" class="w-4 h-4 inline-block mr-2 text-teal-400"></i>
+                        Email: <a href="mailto:Parisanimalhospital@gmail.com" class="hover:text-white transition">Parisanimalhospital@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#services" class="hover:text-white transition">Full Service List</a></li>
+                    <li><a href="#new-patients" class="hover:text-white transition">New Patient Info</a></li>
+                    <li><a href="#" class="hover:text-white transition">Pet Health Library</a></li>
+                    <li><a href="#" class="hover:text-white transition">Client Portal Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Operating Hours (Mock) -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Hours</h4>
+                <ul class="space-y-1 text-sm">
+                    <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                    <li>Saturday: 9:00 AM - 1:00 PM</li>
+                    <li>Sunday: Closed</li>
+                    <li class="pt-2 text-teal-400">Emergency Services Available</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center border-t border-gray-700 mt-8 pt-6">
+            <p class="text-xs">&copy; 2025 Paris Animal Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // JavaScript for Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            // Toggle visibility
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple scroll initialization for smooth transitions
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
